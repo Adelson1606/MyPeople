@@ -1,0 +1,48 @@
+.result {
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px;
+  padding: 20px;
+  margin-top: 35px;
+  align-items: center;
+}
+
+.perInfo {
+  margin: 10px;
+  background-color: #bdbec5;
+  height: 100px;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #485071;
+}
+
+.name {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.email {
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #6161de;
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  color: #485071;
+  margin: 20px;
+}
+
+.email:hover {
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #555;
+}
+
+.perInfo:hover {
+  background-color: rgb(143, 143, 149);
+}
