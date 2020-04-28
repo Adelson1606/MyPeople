@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My People</title>
+</head>
+
+<body>
+  <div class="title">My People</div>
+  <div id="results"></div>
+
+  <script id="template" type="text/x-handlebars-template">
+<div class="result">
+  {{#each pepArr}}
+  <div class='perInfo' id={{id.value}}> 
+    <div class="name">{{name.first}}  {{name.last}}</div>
+    <div class="email">{{email}}</div>
+  </div>
+  {{/each}}
+</div>
+
+</div>
+    </script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
