@@ -1,16 +1,16 @@
 const source = $('#template').html()
 const template = Handlebars.compile(source)
 
-const pepArr = []
+const users = []
 
 $.ajax({
   url: 'https://randomuser.me/api/?results=10',
   dataType: 'json',
   success: function (data) {
-    const persinInfoArr = data.results
-    pepArr.push(...persinInfoArr)
-    console.log(pepArr)    
-    const newHTML = template({ pepArr })
+    const personInfoArr = data.results
+    users.push(...personInfoArr)
+    console.log(users)    
+    const newHTML = template({ pepArr: users })
     $('#results').append(newHTML)
 
   }
